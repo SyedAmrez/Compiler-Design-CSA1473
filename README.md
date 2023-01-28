@@ -98,12 +98,6 @@ printf("hello");
 
 24.	Write a LEX program to print all HTML tags in the input file.
 Input Source Program: (sample.html)
-<html>
-<body>
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-</body>
-</html>
 
 25.	Write a LEX program which adds line numbers to the given C program file and display the same in the standard output.
 Input Source Program: (sample.c)

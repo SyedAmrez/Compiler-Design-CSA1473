@@ -1,17 +1,16 @@
 %{
 #include<stdio.h>
 %}
-
-%digit [0-9]
-
+DIGIT [0-9]
 %%
-
-{digit}+    printf("Digit: %s\n", yytext);
-.        printf("Not a digit\n");
-
+{DIGIT}+ printf("The input is a digit\n");
+. printf("The input is not a digit\n");
 %%
-
-int main(){
+int main() {
     yylex();
     return 0;
+}
+int yywrap()
+{
+return 1;
 }
